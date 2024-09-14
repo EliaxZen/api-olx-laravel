@@ -5,11 +5,11 @@ use App\Http\Controllers\StatesController;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/ping', function(): JsonResponse{
+Route::get('/ping', function (): JsonResponse {
     return response()->json(['Pong' => true]);
 });
 
-Route::get('states', [StatesController::class, 'index']);
+Route::get('/states', [StatesController::class, 'index']);
 Route::get('/categories', [CategoriesController::class, 'index']);
 
 
@@ -37,4 +37,3 @@ Route::get('/categories', [CategoriesController::class, 'index']);
  * [ ] - /ad/:id(delete) - Deletar um anúncio
  * [ ] - /ad/:id/:image - Deletar imagem de um anúncio
  */
-
