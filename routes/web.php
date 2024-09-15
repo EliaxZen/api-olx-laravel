@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\StatesController;
+use App\Http\Controllers\UserController;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Route;
 
@@ -11,6 +12,10 @@ Route::get('/ping', function (): JsonResponse {
 
 Route::get('/states', [StatesController::class, 'index']);
 Route::get('/categories', [CategoriesController::class, 'index']);
+
+Route::post('/user/signup', [UserController::class, 'signup']);
+Route::post('/user/signin', [UserController::class, 'signin']);
+Route::post('/user/me', [UserController::class, 'me']);
 
 
 
