@@ -20,8 +20,9 @@ Route::get('/categories', [CategoriesController::class, 'index']);
  * ----------------------------------------------------------------
  * - Rotas de Configuração Geral
  * ----------------------------------------------------------------
- * [ ] - /states - Listar os Estados
- * [ ] - /categories - Listar as categorias do sistema
+ * [X] - /states - Listar os Estados
+ * [X] - /categories - Listar as categorias do sistema
+ * [X] - Criar as seeders para os estados e categorias
  * ----------------------------------------------------------------
  * - Rotas de Autenticação - Autenticação via Token
  * ----------------------------------------------------------------
