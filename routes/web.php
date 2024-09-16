@@ -29,6 +29,18 @@ Route::post('/user/me', [UserController::class, 'me']);
  * [X] - /categories - Listar as categorias do sistema
  * [X] - Criar as seeders para os estados e categorias
  * ----------------------------------------------------------------
+ * - Mensagens de erro devem conter:
+ * error: Mensagem descritiva do erro, exemplo:
+ * {
+ *  error: 'Usuário inválido'
+ * }
+ * ----------------------------------------------------------------
+ * - Sucesso:
+ * Deve conter um campo "error" com o valor nulo ou vazio, exemplo:
+ * {
+ *  error: ''
+ * }
+ * ----------------------------------------------------------------
  * - Rotas de Autenticação - Autenticação via Token
  * ----------------------------------------------------------------
  * [ ] - /user/signin - Login do Usuário

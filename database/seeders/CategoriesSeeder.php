@@ -17,7 +17,6 @@ class CategoriesSeeder extends Seeder
         DB::table('categories')->insert([
             'name' => 'Electronics',
             'slug' => 'electronics',
-            
         ]);
     }
 }
